@@ -102,7 +102,7 @@ app.get('/facts', redirectLogin, (req, res) => {
 });
 
 // Show saved facts (GET route)
-app.get('saved_facts', redirectLogin, (req, res) => {
+app.get('/facts/saved', redirectLogin, (req, res) => {
     const userId = req.session.userId;
 
     // SQL query to get saved facts with a formatted date
@@ -121,7 +121,7 @@ app.get('saved_facts', redirectLogin, (req, res) => {
 
 
 // Save a fact (POST route)
-app.post('/saved_facts', redirectLogin, (req, res) => {
+app.post('/facts/saved', redirectLogin, (req, res) => {
     const userId = req.session.userId;
     const fact = req.body.fact; // Assuming the fact is passed in the body as 'fact'
     console.log('Fact received from form:', req.body.fact); // Log the fact to ensure it is being received correctly
