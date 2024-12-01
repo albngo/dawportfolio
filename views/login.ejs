@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <title>Login</title>
+</head>
+<body>
+    <div id="login-container" class="container">
+        <header>
+            <h1 id="login-title">Login</h1>
+        </header>
+        <form action="/users/loggedin" method="POST" id="login-form">
+            <div class="form-group">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" id="username" name="username" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" name="password" class="form-input" required>
+            </div>
+            <button type="submit" id="login-button" class="button">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/users/register" id="register-link">Register here</a></p>
+        <form action="/" method="GET" id="go-back-home-form">
+            <button type="submit" id="go-back-home-button" class="button">Go Back to Home</button>
+        </form>
+    </div>
+</body>
+</html>

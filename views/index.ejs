@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome and hello to <%= shopData.shopName %></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <div id="index-container">
+      <header id="index-header">
+        <h1 id="index-header-title">Welcome to <%= shopData.shopName %></h1>
+      </header>
+      <div id="index-links-container">
+        <p><a id="index-link-about" class="link-item" href="about">About <%= shopData.shopName %></a></p>
+        <p><a id="index-link-register" class="link-item" href="/users/loggedin">Dashboard</a></p>
+        <p><a id="index-link-register" class="link-item" href="users/register">Register with us</a></p>
+        <p><a id="index-link-login" class="link-item" href="users/login">Login</a></p>
+        <p><a id="index-link-logout" class="link-item" href="logout">Logout</a></p>
+        <p><a id="index-link-saved-facts" class="link-item" href="/facts/saved">View Saved Fun Facts</a></p>
+        <p><a id="index-link-facts" class="link-item" href="facts">Fun Fact</a></p>
+      </div>
+    </div>
+  </body>
+</html>

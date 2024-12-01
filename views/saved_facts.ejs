@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <title>Saved Facts</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="saved-facts-title">Saved Facts</h1>
+        </header>
+
+        <% if (savedFacts && savedFacts.length > 0) { %>
+            <div id="saved-facts-list">
+                <ul>
+                    <% savedFacts.forEach(fact => { %>
+                        <li class="fact-item">
+                            <p><strong>Fact:</strong> <%= fact.fact %></p>
+                            <p><strong>Saved on:</strong> <%= fact.formatted_date %></p>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% } else { %>
+            <p>No saved facts yet!</p>
+        <% } %>
+
+        <!-- Search Form -->
+        <form action="/facts/saved/search" method="GET" id="search-form">
+            <input type="text" name="keyword" placeholder="Search saved facts..." id="search-input" />
+            <button type="submit" class="button" id="search-button">Search</button>
+        </form>
+
+        <div id="navigation">
+            <a href="/" class="button">Go to Home</a>
+            <a href="/logout" class="button">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

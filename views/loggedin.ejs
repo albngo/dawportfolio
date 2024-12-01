@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged In</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+
+<header id="header-loggedin">
+    <h1>Welcome to the Dashboard</h1>
+</header>
+
+<main id="main-loggedin">
+    <section id="greeting-section">
+        <h2>Hello, <span id="username-placeholder"><%= username %></span>!</h2>
+        <p>Here you can manage your facts.</p>
+    </section>
+</main>
+
+<nav id="navbar-loggedin">
+    <a href="/facts/saved" class="nav-link">Saved Facts</a>
+    <a href="/" class="nav-link">Home</a>
+    <a href="/logout" class="nav-link">Logout</a>
+</nav>
+</body>
+</html>

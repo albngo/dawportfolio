@@ -1,0 +1,377 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Main container for content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #606060;
+    margin: 0;
+}
+
+/* Links container */
+.links-container, #login-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Individual link item styling */
+.link-item, .fact-item {
+    display: block;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #606060;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.link-item:hover, .fact-item:hover {
+    background-color: #444444;
+    color: white;
+}
+
+/* Fun Fact Text */
+#fun-fact-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+button, .button {
+    background-color: #444444;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1rem 0;
+    width: 200px;
+    text-decoration: none;
+}
+
+button:hover, .button:hover {
+    background-color: #666666;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    font-size: 1.2rem;
+    color: #606060;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 80%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+/* Login page styling */
+#login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#login-container p {
+    margin-top: 2rem;
+}
+
+#register-link {
+    color: #444444;
+    text-decoration: none;
+}
+
+#register-link:hover {
+    color: #606060;
+}
+
+/* Register page styling */
+#register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#register-container h1 {
+    font-size: 2.5rem;
+    color: #606060;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#register-container p {
+    margin-bottom: 0.5rem;
+}
+
+#register-container input {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+#register-container input[type="submit"] {
+    background-color: #444444;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#register-container input[type="submit"]:hover {
+    background-color: #666666;
+}
+
+/* Saved Facts Page */
+#saved-facts-title {
+    font-size: 2.5rem;
+    color: #606060;
+    margin-bottom: 2rem;
+}
+
+#saved-facts-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.fact-item {
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #606060;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#search-form {
+    margin-top: 2rem;
+}
+
+#search-input {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+#search-button {
+    background-color: #444444;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-left: 1rem;
+    width: 120px;
+}
+
+#search-button:hover {
+    background-color: #666666;
+}
+
+#navigation {
+    margin-top: 2rem;
+}
+
+/* Navbar link styling */
+.nav-link {
+    text-decoration: none;
+    color: #444444;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    padding: 0.75rem 1.5rem; /* Add padding to match button size */
+    border-radius: 5px; /* Rounded corners for uniform appearance */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.nav-link:hover {
+    background-color: #666666; /* Darker background on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* About page styling */
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+#about-container h1 {
+    font-size: 2.5rem;
+    color: #606060;
+    margin-bottom: 1rem;
+}
+
+#about-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#about-container form {
+    margin-top: 2rem;
+}
+
+/* Facts page styling */
+#facts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+#facts-container h1 {
+    font-size: 2.5rem;
+    color: #606060;
+    margin-bottom: 1.5rem;
+}
+
+#facts-container p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+#facts-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#facts-container form button {
+    width: 200px;
+}
+
+#facts-container form input[type="hidden"] {
+    display: none;
+}
+
+/* Logged-in page specific styling */
+
+/* Header styling for the logged-in page */
+#header-loggedin {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#header-loggedin h1 {
+    font-size: 2.5rem;
+    color: #606060;
+}
+
+#header-loggedin p {
+    font-size: 1.2rem;
+}
+
+/* Specific styles for the logged-out page */
+#logged-out-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header-logged-out {
+    margin-bottom: 2rem;
+}
+
+#header-logged-out h1 {
+    font-size: 2.5rem;
+    color: #606060;
+    margin: 0;
+}
+
+#header-logged-out p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#logged-out-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#go-home-btn,
+#login-again-btn {
+    background-color: #444444;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#go-home-btn:hover,
+#login-again-btn:hover {
+    background-color: #666666;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+    <title>Fun Facts</title>
+</head>
+<body>
+    <div id="facts-container" class="container">
+        <header>
+            <h1 id="facts-title">Fun Fact</h1>
+        </header>
+        <p id="fun-fact-text"><%= funFact %></p>
+
+        <!-- Save Fun Fact -->
+        <form action="/facts/save" method="POST" id="save-fact-form">
+            <input type="hidden" name="fact" value="<%= funFact %>">
+            <button type="submit" id="save-fact-button" class="button">Save Fact</button>
+        </form>
+        
+        <!-- Button to Reroll Fun Fact -->
+        <form action="/reroll" method="GET" id="reroll-form">
+            <button type="submit" id="reroll-button" class="button">Get Another Fun Fact</button>
+        </form>
+        
+        <!-- Button to Go Back to Home -->
+        <form action="/" method="GET" id="go-back-home-form">
+            <button type="submit" id="go-back-home-button" class="button">Go Back to Home</button>
+        </form>
+    </div>
+</body>
+</html>

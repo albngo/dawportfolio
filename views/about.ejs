@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>About <%= shopData.shopName %></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <div id="about-container">
+      <header id="about-header">
+        <h1 id="about-header-title">About <%= shopData.shopName %></h1>
+      </header>
+      <div id="about-info">
+        <p>We have a vast collection of fun facts to save and view!</p>
+      </div>
+      <div id="about-button">
+        <!-- Button to Go Back to Home -->
+        <form action="/" method="GET">
+          <button type="submit" id="about-go-home">Go Back to Home</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
