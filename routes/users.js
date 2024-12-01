@@ -3,7 +3,7 @@ const { check, validationResult } = require('express-validator');
 
 // Create a new router
 const express = require("express");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const router = express.Router();
 const saltRounds = 10;
 
