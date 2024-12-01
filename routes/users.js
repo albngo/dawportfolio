@@ -89,7 +89,7 @@ router.get('/loggedin', redirectLogin, function (req, res) {
     const userName = req.session.userName; // Retrieve the username from the session
 
     if (userName) {
-        res.render('loggedin', { username: userName }); // Render the page with the username
+        res.render('loggedin.ejs', { username: userName }); // Render the page with the username
     } else {
         res.redirect('/users/login'); // Redirect to login if session data is missing
     }

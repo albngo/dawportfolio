@@ -33,7 +33,7 @@ router.get('/logout', redirectLogin, (req, res) => {
 
 // Logged Out page route
 router.get('/logged-out', (req, res) => {
-    res.render('logged-out'); // Render the 'logged-out.ejs' page
+    res.render('logged-out.ejs'); // Render the 'logged-out.ejs' page
 });
 
 
