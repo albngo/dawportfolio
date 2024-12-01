@@ -135,7 +135,7 @@ app.post('/facts/save', redirectLogin, (req, res) => {
         }
 
         // Redirect to the saved facts page after saving
-        res.redirect('/facts/saved');
+        res.redirect('saved_facts');
     });
 });
 
