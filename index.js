@@ -121,7 +121,7 @@ app.get('/facts/saved', redirectLogin, (req, res) => {
 
 
 // Save a fact (POST route)
-app.post('facts/saved', redirectLogin, (req, res) => {
+app.post('/facts/saved', redirectLogin, (req, res) => {
     const userId = req.session.userId;
     const fact = req.body.fact; // Assuming the fact is passed in the body as 'fact'
     console.log('Fact received from form:', req.body.fact); // Log the fact to ensure it is being received correctly
@@ -135,7 +135,7 @@ app.post('facts/saved', redirectLogin, (req, res) => {
         }
 
         // Redirect to the saved facts page after saving
-        res.redirect('saved_facts');
+        res.redirect('/facts/saved');
     });
 });
 
