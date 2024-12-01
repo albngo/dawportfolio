@@ -1,40 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html>
+  <head>
+    <title>Register for <%=shopData.shopName%></title>
     <link rel="stylesheet" type="text/css" href="/main.css" />
-    <title>Saved Facts</title>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1 id="saved-facts-title">Saved Facts</h1>
-        </header>
-
-        <% if (savedFacts && savedFacts.length > 0) { %>
-            <div id="saved-facts-list">
-                <% savedFacts.forEach(fact => { %>
-                    <a href="#" class="fact-item">
-                        <p><strong>Fact:</strong> <%= fact.fact %></p>
-                        <p><strong>Saved on:</strong> <%= fact.formatted_date %></p>
-                    </a>
-                <% }) %>
-            </div>
-        <% } else { %>
-            <p>No saved facts yet!</p>
-        <% } %>
-
-        <!-- Search Form -->
-        <form action="/facts/saved/search" method="GET" id="search-form">
-            <input type="text" name="keyword" placeholder="Search saved facts..." id="search-input" />
-            <button type="submit" class="button" id="search-button">Search</button>
-        </form>
-
-        <div id="navigation">
-            <a href="/" class="nav-link">Go to Home</a>
-            <a href="/logout" class="nav-link">Logout</a>
-        </div>
-    </div>
-</body>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Register for <%=shopData.shopName%></h1>
+    </header>
+    <main class="container">
+      <form class="form" method="POST" action="registered">
+        <p>
+          <label for="first">First name:</label>
+          <input id="first" type="text" name="first" class="form-input" />
+        </p>
+        <p>
+          <label for="last">Last name:</label>
+          <input id="last" type="text" name="last" class="form-input" />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input id="email" type="text" name="email" class="form-input" />
+        </p>
+        <p>
+          <label for="username">Username:</label>
+          <input id="username" type="text" name="username" class="form-input" />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input id="password" type="password" name="password" class="form-input" />
+        </p>
+        <input type="submit" value="Register" class="button" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2024 <%=shopData.shopName%>. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
