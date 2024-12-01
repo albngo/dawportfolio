@@ -115,7 +115,7 @@ app.get('/facts/saved', redirectLogin, (req, res) => {
 
         // Pass the results (saved facts) to the saved_facts.ejs view
         console.log(results); // Log to check the data structure
-        res.render('saved_facts', { savedFacts: results });
+        res.render('/facts/saved', { savedFacts: results });
     });
 });
 
@@ -135,7 +135,7 @@ app.post('/facts/saved', redirectLogin, (req, res) => {
         }
 
         // Redirect to the saved facts page after saving
-        res.redirect('saved_facts');
+        res.redirect('/facts/saved');
     });
 });
 
