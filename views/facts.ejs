@@ -14,7 +14,7 @@
         <p id="fun-fact-text"><%= funFact %></p>
 
         <!-- Save Fun Fact -->
-        <form action="/saved_facts" method="POST" id="save-fact-form">
+        <form action="/facts/saved" method="POST" id="save-fact-form">
             <input type="hidden" name="fact" value="<%= funFact %>">
             <button type="submit" id="save-fact-button" class="button">Save Fact</button>
         </form>
