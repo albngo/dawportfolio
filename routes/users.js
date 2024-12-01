@@ -124,7 +124,7 @@ router.post('/loggedin', function (req, res, next) {
                     req.session.userName = userName; // Store the username in session
                     
                     // Render the loggedin page with the username
-                    res.redirect('users/loggedin'); // Redirect to the dashboard route
+                    res.redirect('/loggedin'); // Redirect to the dashboard route
                 } else {
                     // Send failure message for incorrect password
                     res.send('Login failed! Incorrect username or password.');
