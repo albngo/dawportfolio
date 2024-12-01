@@ -102,7 +102,7 @@ app.get('/facts', redirectLogin, (req, res) => {
 });
 
 // Show saved facts (GET route)
-app.get('/facts/saved', redirectLogin, (req, res) => {
+app.get('saved_facts', redirectLogin, (req, res) => {
     const userId = req.session.userId;
 
     // SQL query to get saved facts with a formatted date
