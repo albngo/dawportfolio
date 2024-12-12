@@ -153,5 +153,9 @@ app.get('/facts/saved/search', redirectLogin, (req, res) => {
     });
 });
 
+const apipRouter = require('./routes/apip'); // Adjust the path if necessary
+
+app.use('/api', apipRouter); // Prefixes all routes in apip.js with '/api'
+
 // Start the web app listening
 app.listen(port, () => console.log(`Node app listening on port ${port}!`));
