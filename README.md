@@ -6,7 +6,20 @@ Then navigate into the folder directory with "cd dawportfolio".
 
 Then do "curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -" and "sudo apt install -y nodejs" right after, this ensures Node.js and npm are installed.
 
-Then run "npm install axios bcryptjs dotenv ejs express express-sanitizer express-validator express-session mysql2 node nodejs request stack".
+Then run: 
+npm install axios 
+npm install bcryptjs 
+npm install dotenv 
+npm install ejs 
+npm install express 
+npm install express-sanitizer 
+npm install express-validator 
+npm install express-session 
+npm install mysql2 
+npm install node 
+npm install nodejs 
+npm install request 
+npm install stack.
 
 This will install all the required dependencies or alternatively run "npm init" this should also install all the dependencies so use the above just in case.
 
